@@ -19,15 +19,15 @@ const COLORS = { co2: '#60A5FA', ch4: '#F59E0B' };
 
 const DataMetana: React.FC = () => {
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center text-center p-4">
-            <div className="max-w-4xl w-full">
+        <div className="bg-white p-8 rounded-lg shadow-xl border border-gray-200">
+            <div className="max-w-4xl w-full mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
                     Dua Sisi Gas Metana: Potensi & Peluang
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
                     Metana adalah gas rumah kaca yang sangat kuat. Meskipun masa hidupnya di atmosfer lebih pendek, potensi pemanasannya jauh lebih tinggi daripada CO2 dalam jangka waktu 100 tahun. Ini menjadikannya pedang bermata dua: ancaman besar dalam jangka pendek, sekaligus peluang besar untuk mitigasi yang cepat.
                 </p>
-                <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 w-full" style={{ height: '400px' }}>
+                <div className="w-full" style={{ height: '400px' }}>
                     <ResponsiveContainer width="100%" height="100%">
                         <BarChart data={data} layout="vertical" barCategoryGap="20%">
                             <XAxis type="number" hide />

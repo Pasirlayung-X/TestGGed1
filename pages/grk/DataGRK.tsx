@@ -15,15 +15,15 @@ const COLORS = ['#10B981', '#3B82F6', '#F59E0B', '#EF4444', '#6B7280'];
 
 const DataGRK: React.FC = () => {
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center text-center p-4">
-            <div className="max-w-3xl w-full">
+        <div className="bg-white p-8 rounded-lg shadow-xl border border-gray-200">
+            <div className="max-w-3xl w-full mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
                     Peran Peternakan dalam Emisi Global
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
                     Menurut Organisasi Pangan dan Pertanian (FAO), sektor peternakan menyumbang sekitar <span className="font-bold text-emerald-600">14.5%</span> dari total emisi gas rumah kaca global yang disebabkan oleh manusia. Angka ini mencakup seluruh rantai pasok, mulai dari produksi pakan, fermentasi enterik, hingga pengolahan limbah.
                 </p>
-                <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 w-full" style={{ height: '400px' }}>
+                <div className="w-full" style={{ height: '400px' }}>
                     <ResponsiveContainer width="100%" height="100%">
                         <PieChart>
                             <Tooltip

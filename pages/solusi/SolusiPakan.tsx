@@ -2,19 +2,17 @@ import React from 'react';
 import { LeafIcon } from '../../components/icons/LeafIcon';
 
 const SolutionSection: React.FC<{ title: string; icon: React.ReactNode; children: React.ReactNode }> = ({ title, icon, children }) => (
-    <section className="min-h-screen flex items-center justify-center py-12 px-4">
-        <div className="max-w-4xl w-full bg-white p-8 rounded-lg shadow-xl border border-gray-200">
-            <div className="flex items-center mb-6">
-                <div className="p-4 bg-emerald-100 rounded-full mr-5">
-                    {icon}
-                </div>
-                <h3 className="text-3xl font-bold text-gray-800">{title}</h3>
+    <div className="bg-white p-8 rounded-lg shadow-xl border border-gray-200">
+        <div className="flex items-center mb-6">
+            <div className="p-4 bg-emerald-100 rounded-full mr-5">
+                {icon}
             </div>
-            <div className="text-lg text-gray-600 space-y-4 pl-20">
-                {children}
-            </div>
+            <h3 className="text-3xl font-bold text-gray-800">{title}</h3>
         </div>
-    </section>
+        <div className="text-lg text-gray-600 space-y-4 pl-20">
+            {children}
+        </div>
+    </div>
 );
 
 

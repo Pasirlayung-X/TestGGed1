@@ -2,10 +2,8 @@ import React from 'react';
 import { CowIcon } from '../../components/icons/CowIcon';
 
 const FullScreenSection: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-    <section className="min-h-screen flex items-center justify-center py-12 px-4">
-        <div className="max-w-3xl w-full">
-            {children}
-        </div>
+    <section>
+        {children}
     </section>
 );
 
